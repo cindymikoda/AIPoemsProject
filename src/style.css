@@ -115,12 +115,13 @@ form {
 }
 .poem-output {
   color: #21404e;
-  background-color: #d0e8c6;
+  border-left: #21404e 5px solid;
   font-size: 14px;
   font-family: "Libertinus Mono", monospace;
   font-weight: 400;
   font-style: normal;
   border-radius: 20px;
+  margin-top: 20px;
   padding: 20px;
 }
 .hidden {
