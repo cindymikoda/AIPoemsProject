@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  font-family: "Economica", sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 24px;
   color: #fff;
   padding: 20px 0;
@@ -55,7 +58,7 @@ a:hover {
   background: rgb(245, 243, 246, 0.75);
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 50px;
   overflow: hidden;
 }
 header {
@@ -70,37 +73,58 @@ p {
 }
 form {
   display: flex;
-  margin: 5px;
+  margin-bottom: 10px;
   padding: 10px;
-  border-radius: 25px;
-  background: #f1ef9a;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
 }
-.poemPrompt {
-  padding: 10px;
-  width: 80%;
+
+.poem-prompt {
+  padding: 15px;
+  width: 100%;
   border-radius: 20px;
   border: none;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
-.submit-button {
+
+.poem-prompt:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.poem-submit-btn {
   margin-left: 10px;
-  padding: 0 10px;
+  padding: 15px 30px;
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   border: none;
   background: #a888b5;
   color: #f1ef9a;
   cursor: pointer;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
 }
-.thePoem {
+
+.poem-submit-btn:hover:enabled {
+  background: #7ba0a9;
+  color: #fff;
+}
+.hint {
+  color: #7ba0a9;
+  font-size: 12px;
+  text-align: left;
+}
+.poem-output {
   color: #21404e;
+  background-color: #d0e8c6;
   font-size: 14px;
-  background-color: #ffe3e2;
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   border-radius: 20px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
+}
+.hidden {
+  display: none;
 }
 footer {
   margin-top: 20px;
@@ -111,4 +135,12 @@ footer {
   background-color: #d0e8c6;
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }

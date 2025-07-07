@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libertinus+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -10,17 +16,17 @@
     <div class="animated-bg"></div>
     <div class="container">
       <header>
-        <h1>Welcome to the AI Poem Generator</h1>
+        <h1>Poem with a click</h1>
         <p>Generate your own poems with the power of AI!</p>
       </header>
 
       <main>
-        <form id="poemForm" action="">
+        <form id="poem-generator-form" action="">
           <input
             type="text"
             name="poemPrompt"
-            class="poemPrompt"
-            id="poemPrompt"
+            class="poem-prompt"
+            id="poem-prompt"
             autofocus
             required
             autocomplete="off"
@@ -28,13 +34,15 @@
           />
           <input
             type="submit"
-            class="submit-button"
-            id="submit-button"
-            value="Get your poem."
+            class="poem-submit-btn"
+            id="poem-submit-btn"
+            value="Submit"
           />
         </form>
-
-        <div class="thePoem" id="thePoem"></div>
+        <div class="hint">
+          i.e: "A poem about the sea", "A haiku about nature".
+        </div>
+        <div class="poem-output hidden" id="poem-output"></div>
       </main>
 
       <footer>
