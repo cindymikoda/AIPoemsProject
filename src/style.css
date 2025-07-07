@@ -146,7 +146,6 @@ footer {
   animation: blink 1s step-start 0s infinite;
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
   .container {
     margin: 30px 5px;
