@@ -145,3 +145,49 @@ footer {
 .blink {
   animation: blink 1s step-start 0s infinite;
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    margin: 30px 5px;
+    padding: 20px 5px;
+    max-width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .poem-prompt {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .poem-submit-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+
+  .poem-output {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}
