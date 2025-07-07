@@ -7,22 +7,32 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI Poem Generator</h1>
-      <p>Generate your own poems with the power of AI!</p>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          name="poemPrompt"
-          id="poemPrompt"
-          autofocus
-          required
-          autocomplete="off"
-          placeholder="What kind of poem your heart desires?"
-        />
-        <input type="submit" value="Get your poem." />
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Poem Generator</h1>
+        <p>Generate your own poems with the power of AI!</p>
+      </header>
+
+      <main>
+        <form action="">
+          <input
+            type="text"
+            name="poemPrompt"
+            class="poemPrompt"
+            id="poemPrompt"
+            autofocus
+            required
+            autocomplete="off"
+            placeholder="What kind of poem your heart desires?"
+          />
+          <input
+            type="submit"
+            class="submit-button"
+            id="submit-button"
+            value="Get your poem."
+          />
+        </form>
+
         <div class="thePoem">
           <p>
             <strong>Sonnet of Fidelity</strong>
@@ -39,26 +49,29 @@
             since it is flame But be infinite while it lasts.
           </p>
         </div>
-      </form>
-    </main>
-    <footer>
-      <p>
-        &copy; 2025
-        <a
-          href="https://selective-raft-f01.notion.site/1b1b9736465580578a5bf5be4d4418d4?source=copy_link"
-          target="_blank"
-          ><strong>Cindy Mikoda</strong></a
-        >
-        —
-        <a href="https://github.com/cindymikoda/AIPoemsProject" target="_blank"
-          >GitHub Repository</a
-        >
-        |
-        <a href="https://ai-poems-project.vercel.app" target="_blank"
-          >Live on Vercel</a
-        >
-      </p>
-    </footer>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2025
+          <a
+            href="https://selective-raft-f01.notion.site/1b1b9736465580578a5bf5be4d4418d4?source=copy_link"
+            target="_blank"
+            ><strong>Cindy Mikoda</strong></a
+          >
+          —
+          <a
+            href="https://github.com/cindymikoda/AIPoemsProject"
+            target="_blank"
+            >GitHub Repository</a
+          >
+          |
+          <a href="https://ai-poems-project.vercel.app" target="_blank"
+            >Live on Vercel</a
+          >
+        </p>
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
